@@ -6,6 +6,6 @@ expt1 : Time Complexity Analysis for Insertion sort and Selection sort
 <br>
 <br>
 expt2 : Time Complexity Analysis for Merge sort and Quick sort 
-<br> Output folder contains Images of Merge sorted and Quick sorted array of size 10 along with number of swaps required while sorting
+<br> 
 <br>
 
