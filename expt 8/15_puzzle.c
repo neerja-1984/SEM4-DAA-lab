@@ -107,8 +107,7 @@ if(allowedMoves[i]){
 childIndex++;
 xCor=node->blankTileLoc[0];
 yCor=node->blankTileLoc[1];
-swap(&node->children[childIndex]->puzzle[xCor][yCor],&node-
->children[childIndex]->puzzle[xCor+changeInX(i)][yCor+changeInY(i)]);
+swap(&node->children[childIndex]->puzzle[xCor][yCor],&node->children[childIndex]->puzzle[xCor+changeInX(i)][yCor+changeInY(i)]);
 node->children[childIndex]->currMove=movesOrder[i];
 node->children[childIndex]->blankTileLoc[0]=xCor+changeInX(i);
 node->children[childIndex]->blankTileLoc[1]=yCor+changeInY(i);
@@ -142,7 +141,8 @@ void main(){
 root=(struct Node*)malloc(sizeof(struct Node));
 root->parent=NULL;
 root->currMove='N';//N means no move done yet
-//taking the inputs for root nodeprintf("\nEnter the initial state of the puzzle(0 for empty tile)-\n\n");
+//taking the inputs for root node
+printf("\nEnter the initial state of the puzzle(0 for empty tile)-\n\n");
 for(int i=0; i<4; i++){
 for(int j=0; j<4; j++)
 scanf("%d",&(root->puzzle[i][j]));
@@ -162,8 +162,7 @@ root->errorCount++;
 printf("\nFollowing is the step-by-step solution of the puzzle-\n");
 struct Node* solnNode=solvePuzzle(root,0);
 printf("\nSummary-");
-printf("\n\nTotal Number of moves required to solve the puzzle ----->
-%d\n",finalCost);
+printf("\n\nTotal Number of moves required to solve the puzzle ----->%d\n",finalCost);
 printf("Following is the step-by-step movement of blank tile to solve the puzzle: ");
 printSolution(solnNode);
 printf("\n\n");
