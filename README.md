@@ -16,3 +16,9 @@ expt6 : Graph Algorithm - Single source shortest path algorithm..Dijkstra Algori
 <br>
 expt7 : Using Backtracking strategy to solve NQueen Problem
 <br>
+expt8 : Branch and Bound Strategy : 15 Puzzle Problem
+<br> 
+expt9 : Approximation Algorithm - Vertex Cover Problem
+<br>
+expt10 : String Matching Algorithm : Rabin - Karp and Naive Algorithm
+<br>
